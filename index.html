@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#orders">Orders</a></li>
+                <li><a href="#customers">Customers</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="products">
+            <h2>Products</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody id="product-list">
+                    <!-- products will be rendered here -->
+                </tbody>
+            </table>
+            <button id="add-product-btn">Add Product</button>
+        </section>
+        <section id="orders">
+            <h2>Orders</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer Name</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="order-list">
+                    <!-- orders will be rendered here -->
+                </tbody>
+            </table>
+            <button id="add-order-btn">Add Order</button>
+        </section>
+        <section id="customers">
+            <h2>Customers</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Customer Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                    </tr>
+                </thead>
+                <tbody id="customer-list">
+                    <!-- customers will be rendered here -->
+                </tbody>
+            </table>
+            <button id="add-customer-btn">Add Customer</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
